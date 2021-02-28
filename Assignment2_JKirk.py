@@ -1,17 +1,21 @@
+""" 
+Author: Jamey Kirk
+Title: Assignment2_Turtle
+Date: 02/28/2021
+Description: use turtle to draw polygons
+"""
+
 ## initialize turtle screen
 import turtle
 s = turtle.getscreen()
 t = turtle.getturtle()
-
-## adjust turtle start position
-# t.penup()
-# t.setpos(x=60, y=-60)
-# t.pendown()
  
 ## while length >= 20 then draw = True
 draw = True
 lineLen = 120
 startPos = 1.0
+## absVal is value difference each time turtle x and y cordinates change
+## adding it to the startPos after each loop guarantees that startPos will always be larger
 absVal = 14.142135623730951
 xPos = 0
 yPos = 0
